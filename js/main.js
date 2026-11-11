@@ -27,3 +27,7 @@ console.log(formatReceipt(lines, products, "STUDENT", discountCodes, VAT_RATE));
 
 // --- Del B och C, självstudier till torsdagen ---
 // Se README. Ni tar med Kassan till workshoppen och granskar varandras kod.
+
+const receipt = document.querySelector("#receipt");
+
+receipt.textContent = formatReceipt(lines, products, "STUDENT", discountCodes, VAT_RATE);
